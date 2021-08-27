@@ -53,6 +53,7 @@ $(document).ready(function () {
   }
 
   //async porque tiene que esperar que esten disponibles los datos de la API
+  //tmb va async porque los datos q entran por parametro vienen de una async function
   async function mostrarDetalles(movies) {
     movies.forEach((movie) => {
       const { id } = movie;
