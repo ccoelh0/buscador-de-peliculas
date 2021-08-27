@@ -13,8 +13,15 @@ body {
 header {
   background-color: #373b69;
   display: flex;
-  justify-content: flex-end;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   padding: 1rem;
+}
+
+header h1 {
+  color: white;
+  text-shadow: 4px 3px 2px rgba(0, 0, 0, 0.6);
 }
 
 .search {
@@ -39,6 +46,7 @@ header {
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .movie {
@@ -95,14 +103,20 @@ main {
   left: 0;
   bottom: 0;
   right: 0;
-  transform: translateY(101%);
-  transition: transform 0.3s ease-in;
+  /* transform: translateY(101%);
+  transition: transform 0.3s ease-in; */
 }
 
 .overview h3 {
   margin-top: 0;
 }
 
-.movie:hover .overview {
-  transform: translateY(0);
+.overviewDisplay {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
 }
