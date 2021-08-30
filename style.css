@@ -5,16 +5,16 @@
 }
 
 body {
-  background-color: #22254b;
+  background-color: #312244;
   font-family: "Poppins", sans-serif;
   margin: 0;
 }
 
 header {
-  background-color: #373b69;
+  background-color: #45305f;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 1rem;
 }
@@ -25,7 +25,7 @@ header h1 {
 }
 
 footer {
-  background-color: #373b69;
+  background-color: #45305f;
   color: white;
   display: flex;
   justify-content: center;
@@ -39,10 +39,10 @@ footer a {
 }
 
 .search {
-  background-color: transparent;
-  border: 2px solid #22254b;
+  background-color: #37244e;
+  border: 2px solid #160827;
   border-radius: 50px;
-  color: #fff;
+  color: black;
   font-family: inherit;
   font-size: 1rem;
   padding: 0.5rem 1rem;
@@ -64,7 +64,7 @@ main {
 }
 
 .movie {
-  background-color: #373b69;
+  background-color: #45305f;
   border-radius: 3px;
   box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
@@ -109,8 +109,9 @@ main {
 }
 
 .overview {
-  background-color: #fff;
+  background-color: #45305f;
   padding: 2rem;
+  color: white;
   position: absolute;
   max-height: 100%;
   overflow: auto;
